@@ -7,14 +7,11 @@
 
 import UIKit
 
-class MainViewController: UITableViewController {
-   
-
+class MainTableViewController: UITableViewController {
     var items = ["Brasil", "Argentina", "Marrocos", "Croacia", "Inglaterra", "França", "Holanda"]
  
     override func viewDidLoad() {
         super.viewDidLoad()
-    
     }
     
    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
