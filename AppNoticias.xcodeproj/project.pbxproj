@@ -14,7 +14,8 @@
 		E771FB2629451A26006D960A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E771FB2529451A26006D960A /* Assets.xcassets */; };
 		E771FB2929451A26006D960A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E771FB2729451A26006D960A /* LaunchScreen.storyboard */; };
 		E771FB3129452812006D960A /* file.json in Resources */ = {isa = PBXBuildFile; fileRef = E771FB3029452812006D960A /* file.json */; };
-		E7A53EFD29469AF8006CF20E /* NewYorkNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A53EFC29469AF8006CF20E /* NewYorkNews.swift */; };
+		E78327262947736B000DB5B1 /* NewYorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78327252947736B000DB5B1 /* NewYorkTableViewCell.swift */; };
+		E7A53EFF2946AECD006CF20E /* ResponseNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A53EFE2946AECD006CF20E /* ResponseNews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		E771FB2829451A26006D960A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E771FB2A29451A26006D960A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E771FB3029452812006D960A /* file.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = file.json; sourceTree = "<group>"; };
-		E7A53EFC29469AF8006CF20E /* NewYorkNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkNews.swift; sourceTree = "<group>"; };
+		E78327252947736B000DB5B1 /* NewYorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkTableViewCell.swift; sourceTree = "<group>"; };
+		E7A53EFE2946AECD006CF20E /* ResponseNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseNews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,8 @@
 				E771FB1C29451A25006D960A /* AppDelegate.swift */,
 				E771FB1E29451A25006D960A /* SceneDelegate.swift */,
 				E771FB2029451A25006D960A /* MainTableViewController.swift */,
-				E7A53EFC29469AF8006CF20E /* NewYorkNews.swift */,
+				E7A53EFE2946AECD006CF20E /* ResponseNews.swift */,
+				E78327252947736B000DB5B1 /* NewYorkTableViewCell.swift */,
 				E771FB2229451A25006D960A /* Main.storyboard */,
 				E771FB2529451A26006D960A /* Assets.xcassets */,
 				E771FB2729451A26006D960A /* LaunchScreen.storyboard */,
@@ -145,9 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7A53EFD29469AF8006CF20E /* NewYorkNews.swift in Sources */,
 				E771FB2129451A25006D960A /* MainTableViewController.swift in Sources */,
+				E7A53EFF2946AECD006CF20E /* ResponseNews.swift in Sources */,
 				E771FB1D29451A25006D960A /* AppDelegate.swift in Sources */,
+				E78327262947736B000DB5B1 /* NewYorkTableViewCell.swift in Sources */,
 				E771FB1F29451A25006D960A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

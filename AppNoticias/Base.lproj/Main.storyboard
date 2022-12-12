@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--COPA DO MUNDO 2022-->
+        <!--New York Times-->
         <scene sceneID="PTu-u0-irB">
             <objects>
                 <tableViewController id="uWW-oi-Ntn" customClass="MainTableViewController" customModule="AppNoticias" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,13 +16,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Osf-Rx-FrM" userLabel="cell">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="300" id="Osf-Rx-FrM" userLabel="cell" customClass="NewYorkTableViewCell" customModule="AppNoticias" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Osf-Rx-FrM" id="VcO-Up-qUF">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Men Convicted of Killing Malcolm X Will Be Exonerated After Decades" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="kWz-93-ddD">
+                                            <rect key="frame" x="10" y="5" width="373" height="36"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7DS-bW-NQP">
+                                            <rect key="frame" x="10" y="48" width="373" height="218"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Ashley Southall and Jonah E. Bromwich" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="khi-Vv-DWY">
+                                            <rect key="frame" x="10" y="276" width="373" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="khi-Vv-DWY" firstAttribute="leading" secondItem="kWz-93-ddD" secondAttribute="leading" id="09L-9m-NxQ"/>
+                                        <constraint firstItem="kWz-93-ddD" firstAttribute="leading" secondItem="VcO-Up-qUF" secondAttribute="leading" constant="10" id="Qym-67-rNf"/>
+                                        <constraint firstItem="7DS-bW-NQP" firstAttribute="bottom" secondItem="khi-Vv-DWY" secondAttribute="top" constant="-10" id="TkJ-zu-BsZ"/>
+                                        <constraint firstItem="kWz-93-ddD" firstAttribute="top" secondItem="VcO-Up-qUF" secondAttribute="top" constant="5" id="UHt-PN-Ixf"/>
+                                        <constraint firstAttribute="trailing" secondItem="kWz-93-ddD" secondAttribute="trailing" constant="10" id="Xlu-2v-YEt"/>
+                                        <constraint firstItem="7DS-bW-NQP" firstAttribute="top" secondItem="kWz-93-ddD" secondAttribute="bottom" constant="7" id="hIE-qA-BlG"/>
+                                        <constraint firstItem="7DS-bW-NQP" firstAttribute="leading" secondItem="kWz-93-ddD" secondAttribute="leading" id="qgt-Ka-a8R"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="khi-Vv-DWY" secondAttribute="bottom" constant="-5" id="rbA-kE-G97"/>
+                                        <constraint firstItem="7DS-bW-NQP" firstAttribute="trailing" secondItem="kWz-93-ddD" secondAttribute="trailing" id="zJK-ba-HnL"/>
+                                        <constraint firstItem="khi-Vv-DWY" firstAttribute="trailing" secondItem="kWz-93-ddD" secondAttribute="trailing" id="zcv-I5-J8t"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="by" destination="khi-Vv-DWY" id="nhq-Xq-2yg"/>
+                                    <outlet property="imageNews" destination="7DS-bW-NQP" id="lZm-JV-56T"/>
+                                    <outlet property="title" destination="kWz-93-ddD" id="HMI-2g-n6a"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -30,11 +64,11 @@
                             <outlet property="delegate" destination="uWW-oi-Ntn" id="ez3-BP-cw6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="COPA DO MUNDO 2022" id="SBL-3C-NAN"/>
+                    <navigationItem key="navigationItem" title="New York Times" id="SBL-3C-NAN"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aQB-YW-iy2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2387" y="-37"/>
+            <point key="canvasLocation" x="-2387.0229007633588" y="-37.323943661971832"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GtX-lX-gp2">
