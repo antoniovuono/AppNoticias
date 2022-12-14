@@ -16,6 +16,7 @@
 		E771FB3129452812006D960A /* file.json in Resources */ = {isa = PBXBuildFile; fileRef = E771FB3029452812006D960A /* file.json */; };
 		E78327262947736B000DB5B1 /* NewYorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78327252947736B000DB5B1 /* NewYorkTableViewCell.swift */; };
 		E7A53EFF2946AECD006CF20E /* ResponseNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A53EFE2946AECD006CF20E /* ResponseNews.swift */; };
+		E7C670462949117500BB46A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C670452949117400BB46A4 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E771FB3029452812006D960A /* file.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = file.json; sourceTree = "<group>"; };
 		E78327252947736B000DB5B1 /* NewYorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkTableViewCell.swift; sourceTree = "<group>"; };
 		E7A53EFE2946AECD006CF20E /* ResponseNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseNews.swift; sourceTree = "<group>"; };
+		E7C670452949117400BB46A4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				E771FB1E29451A25006D960A /* SceneDelegate.swift */,
 				E771FB1C29451A25006D960A /* AppDelegate.swift */,
 				E771FB2029451A25006D960A /* MainTableViewController.swift */,
+				E7C670452949117400BB46A4 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7C670462949117500BB46A4 /* LoginViewController.swift in Sources */,
 				E771FB2129451A25006D960A /* MainTableViewController.swift in Sources */,
 				E7A53EFF2946AECD006CF20E /* ResponseNews.swift in Sources */,
 				E771FB1D29451A25006D960A /* AppDelegate.swift in Sources */,
