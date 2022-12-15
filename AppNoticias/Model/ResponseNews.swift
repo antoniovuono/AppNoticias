@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct ResponseElement: Codable {
+    let home: Home
+}
+
 // MARK: - Home
 struct Home: Codable { //  Decodable & Encodable
     let status, copyright: String

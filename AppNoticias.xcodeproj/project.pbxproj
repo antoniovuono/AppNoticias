@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7584D96294A71AD00AECC54 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7584D95294A71AD00AECC54 /* NetworkManager.swift */; };
 		E771FB1D29451A25006D960A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771FB1C29451A25006D960A /* AppDelegate.swift */; };
 		E771FB1F29451A25006D960A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771FB1E29451A25006D960A /* SceneDelegate.swift */; };
 		E771FB2129451A25006D960A /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E771FB2029451A25006D960A /* MainTableViewController.swift */; };
 		E771FB2429451A25006D960A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E771FB2229451A25006D960A /* Main.storyboard */; };
 		E771FB2629451A26006D960A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E771FB2529451A26006D960A /* Assets.xcassets */; };
 		E771FB2929451A26006D960A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E771FB2729451A26006D960A /* LaunchScreen.storyboard */; };
-		E771FB3129452812006D960A /* file.json in Resources */ = {isa = PBXBuildFile; fileRef = E771FB3029452812006D960A /* file.json */; };
 		E78327262947736B000DB5B1 /* NewYorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78327252947736B000DB5B1 /* NewYorkTableViewCell.swift */; };
 		E7A53EFF2946AECD006CF20E /* ResponseNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A53EFE2946AECD006CF20E /* ResponseNews.swift */; };
+		E7B4F4C7294A99C20046B478 /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4F4C6294A99C20046B478 /* NewsData.swift */; };
 		E7C670462949117500BB46A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C670452949117400BB46A4 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7584D95294A71AD00AECC54 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E771FB1929451A25006D960A /* AppNoticias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppNoticias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E771FB1C29451A25006D960A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E771FB1E29451A25006D960A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,9 +30,9 @@
 		E771FB2529451A26006D960A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E771FB2829451A26006D960A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E771FB2A29451A26006D960A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E771FB3029452812006D960A /* file.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = file.json; sourceTree = "<group>"; };
 		E78327252947736B000DB5B1 /* NewYorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkTableViewCell.swift; sourceTree = "<group>"; };
 		E7A53EFE2946AECD006CF20E /* ResponseNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseNews.swift; sourceTree = "<group>"; };
+		E7B4F4C6294A99C20046B478 /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
 		E7C670452949117400BB46A4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,8 +78,9 @@
 		E77C3F262947FAD700A8215C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E771FB3029452812006D960A /* file.json */,
 				E7A53EFE2946AECD006CF20E /* ResponseNews.swift */,
+				E7584D95294A71AD00AECC54 /* NetworkManager.swift */,
+				E7B4F4C6294A99C20046B478 /* NewsData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,7 +165,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E771FB2929451A26006D960A /* LaunchScreen.storyboard in Resources */,
-				E771FB3129452812006D960A /* file.json in Resources */,
 				E771FB2629451A26006D960A /* Assets.xcassets in Resources */,
 				E771FB2429451A25006D960A /* Main.storyboard in Resources */,
 			);
@@ -175,9 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B4F4C7294A99C20046B478 /* NewsData.swift in Sources */,
 				E7C670462949117500BB46A4 /* LoginViewController.swift in Sources */,
 				E771FB2129451A25006D960A /* MainTableViewController.swift in Sources */,
 				E7A53EFF2946AECD006CF20E /* ResponseNews.swift in Sources */,
+				E7584D96294A71AD00AECC54 /* NetworkManager.swift in Sources */,
 				E771FB1D29451A25006D960A /* AppDelegate.swift in Sources */,
 				E78327262947736B000DB5B1 /* NewYorkTableViewCell.swift in Sources */,
 				E771FB1F29451A25006D960A /* SceneDelegate.swift in Sources */,
